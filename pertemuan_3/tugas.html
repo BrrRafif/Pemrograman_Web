@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    .wrap {
+      width: 800px;
+      margin: auto;
+    }
+    .header, .menu, .sidebar, .content, .footer {
+      background-color: #35a3f2;
+      border: 4px solid white;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    .badan {
+      display: flex;
+    }
+    .sidebar {
+      flex: 1;
+      width: 25%;
+      height: 400px;
+    }
+    .content {
+      flex: 3;
+      width: 75%;
+    }
+  </style>
+  <title>Pertemuan 2 PWEB_B</title>
+</head>
+
+<body>
+  
+  <table border="1" bgcolor="white" align="center" cellpadding="7" cellspacing="0.5">
+    <caption align="top"><b>Tabel Daftar Nilai Mahasiswa</b></caption>
+    <tr>
+      <th rowspan="2" bgcolor="gray">No</th>
+      <th rowspan="2" bgcolor="gray">NPM</th><th rowspan="2" bgcolor="gray">Nama</th><th colspan="2" bgcolor="gray">Nilai</th>
+    </tr>
+
+    <tr bgcolor="gray">
+      <th>UTS</th><th>UAS</th>
+    </tr>
+    <tr>
+      <td align="center" width="20">1.</td>
+      <td align="left" valign="middle" widht="80" height="40">06.100.001</td>
+      <td align="left" valign="middle" width="180" height="40">Amin A. Angkasa</td>
+      <td align="center" valign="middle" >70</td> <td align="center" valign="middle" >80</td>
+    </tr>
+
+    <tr>
+      <td align="center" width="20">2.</td>
+      <td align="left" valign="middle" widht="80" height="40">06.100.002</td>
+      <td align="left" valign="middle" width="180" height="40">Beni B. Bemardi</td>
+      <td align="center" valign="middle" >70</td> <td align="center" valign="middle" >80</td>
+    </tr>    
+  </table>
+
+  <br><br>
+
+  <h2 style="color: #35e67b" align="center" >Registration Form</b></h2>
+  <form method="post">
+  <form>
+    <div align="center">
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="firstName" name="FirstName" size="20"><br>
+
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lastName" name="LastName" size="20"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="Email" size="20"><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="Password" size="20"><br>
+
+      <label for="repassword">Re-type Password:</label><br>
+      <input type="password" id="repassword" name="RePassword" size="20"><br>
+
+      <label for="contact">Contact:</label><br>
+      <input type="text" id="contact" name="Contact" size="20"><br>
+
+      <label for="gender">Gender:</label><br>
+      <select id="gender" name="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+
+      <br><br><input type="Submit" value="Submit"><br><br>
+    </div>
+  </form>
+
+  <div class="wrap">
+    <div class="header">
+      <h1>Header</h1>
+    </div> 
+
+    <div class="menu">
+      Menu navigasi
+    </div>
+
+    <div class="badan">
+      <div class="sidebar">
+        sidebar
+      </div>
+  
+      <div class="content">
+        content
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+      footer
+    </div>
+  </div>
+</body>
+</html>
